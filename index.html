@@ -105,7 +105,22 @@ function goBack() {
 function goForward() {
   window.history.forward();
 }</script>
-      <input id="search"type="text" value="http://www.ucBrowser.com">
+      <input id="userInput"  id="search"type="text" value="http://www.ucBrowser.com">
+      <input type="submit" onclick="name()">
+      
+     
+
+
+
+<script>
+  function name()
+  {
+var x = document.getElementById("userInput");
+document.getElementById("demo").innerHTML = x;
+console.log("userInput");
+}
+
+</script>
     </div>
     
   </div>
