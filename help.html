@@ -64,9 +64,19 @@ input[type=submit]:hover {
 
 </head>
 <body>
-	 <h3>Contact Form</h3>
+	
 
 <div class="container">
+	
+	 <button onclick="goBack()">Go Back</button><script>
+function goBack() {
+  window.history.back();
+}
+</script><button onclick="goForward()">Go Forward</button>  <script>
+function goForward() {
+  window.history.forward();
+}</script>
+	 <h3>Contact Form</h3>
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">

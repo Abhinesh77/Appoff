@@ -82,9 +82,9 @@ input[type=submit]:hover {
         </div>
         <div class="collapse navbar-collapse " id="micon">
         <ul class="nav navbar-nav navbar-right ">
-          <li><a href="">Search</a></li>
+          <li><a href="#search">Search</a></li>
           <li><a href="#Quick">Quick links</a></li>
-          <li><a href="">History</a></li>
+          <li><a href="his.html">History</a></li>
           <li><a href="https://www.uptodate.com/contents/table-of-contents/whats-new">What's new</a></li>
           <li><a href="https://www.google.com/search?q=events&oq=events&aqs=chrome..69i57.1231j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;events&rciv=evn&sxsrf=ALeKk02CDbyTKkbSodObS4rMoJ_nbX0Vhg:1611380961637#htivrt=events&htidocid=L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDIxLTAxLTIzfDE4MjcxNTQyNzAwMzgxMjk0ODc0&fpstate=tldetail">Events</a></li>
           <li><a href="help.html">Help!</a></li>
@@ -92,12 +92,20 @@ input[type=submit]:hover {
       </div>  
       </div>
     </nav></header>
-    
+
     <div class="container">
   <div class="row">
     
     <div class="column middle">
-      <input type="text" value="http://www.ucBrowser.com">
+      <button onclick="goBack()">Go Back</button><script>
+function goBack() {
+  window.history.back();
+}
+</script><button onclick="goForward()">Go Forward</button>  <script>
+function goForward() {
+  window.history.forward();
+}</script>
+      <input id="search"type="text" value="http://www.ucBrowser.com">
     </div>
     
   </div>
